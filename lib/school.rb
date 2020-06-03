@@ -16,6 +16,10 @@ class School
   end
   
   def sort 
-    
+    new_hash = {}
+    roster.keys.sort.each do |number|
+      new_hash[number] = roster[number].sort
+    end 
+    new_hash
   end 
 end
